@@ -12,7 +12,7 @@ impl SystemInformation {
     fn gather() -> Self {
         use std::env::consts::*;
 
-        SystemInformation {
+        Self {
             system: OS,
             family: FAMILY,
             arch: ARCH,
