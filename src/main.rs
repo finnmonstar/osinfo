@@ -1,6 +1,6 @@
 #![deny(warnings, unsafe_code, clippy::all)]
 
-const VERSION: &str = env!("CARGO_PKG_VERSION");
+const VERSION: &'static str = env!("CARGO_PKG_VERSION");
 
 struct SystemInformation {
     system: &'static str,
