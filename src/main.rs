@@ -10,7 +10,7 @@ struct SystemInformation {
 
 impl SystemInformation {
     fn gather() -> Self {
-        use std::env::consts::*;
+        use std::env::consts::{OS, FAMILY, ARCH};
 
         Self {
             system: OS,
@@ -21,9 +21,9 @@ impl SystemInformation {
 }
 
 fn main() {
-    let info = SystemInformation::gather();
+    let info: SystemInformation = SystemInformation::gather();
 
-    println!(
+    eprintln!(
         "osinfo {VERSION}\n\nOperating System: {}\nSystem Architecture: {}\nOS Family: {}",
         info.system, info.arch, info.family
     );
