@@ -23,7 +23,7 @@ impl SystemInformation {
 fn main() {
     let info: SystemInformation = SystemInformation::gather();
 
-    eprintln!(
+    println!(
         "osinfo {VERSION}\n\nOperating System: {}\nSystem Architecture: {}\nOS Family: {}",
         info.system, info.arch, info.family
     );
