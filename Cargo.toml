@@ -3,5 +3,7 @@ name = "osinfo"
 version = "0.0.2"
 edition = "2021"
 
+authors = ["finnmonstar <finnmonstar@pm.me>"]
+
 [profile.release]
 strip = true
